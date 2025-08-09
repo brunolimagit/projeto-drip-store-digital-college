@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drip Store - Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#f9f8fe]">
+    <header class="flex justify-center items-center text-center">
+      <h3
+        class="text-[30px] w-full bg-purple-500 text-[white] font-bold p-[20px]"
+      >
+        header
+      </h3>
+    </header>
+
+    <section>
+      <div class="flex items-center justify-center gap-3">
+        <div
+          class="bg-[white] w-[890px] h-[352px] mt-[100px] rounded-[4px] p-[30px] gap-[20px]"
+        >
+          <div class="flex w-[830px] h-[22px] gap-[365px]">
+            <div>
+              <p
+                class="w-[118px] h-[22px] font-bold text-[14px] text-[#474747]"
+              >
+                MEU CARRINHO
+              </p>
+            </div>
+            <div class="flex w-[346px] h-[22px] gap-[31px]">
+              <p
+                class="w-[112px] h-[22px] font-medium text-[14px] text-[#474747]"
+              >
+                QUANTIDADE
+              </p>
+              <p
+                class="w-[112px] h-[22px] font-medium text-[14px] text-[#474747]"
+              >
+                UNITÁRIO
+              </p>
+              <p
+                class="w-[112px] h-[22px] font-medium text-[14px] text-[#474747]"
+              >
+                TOTAL
+              </p>
+            </div>
+          </div>
+
+          <hr class="w-[830px] border-1 text-[#cccccc] my-4" />
+
+          <div class="flex justify-between">
+            <div class="flex gap-3">
+              <img
+                src="../assets/d52bcba86d839d9bc81eba71990cf69a20c77364 (1).png"
+                class="w-[127px] h-[104px] rounded-[4.80px] bg-[#e2e3ff] p-2"
+                alt=""/>
+              <div class="w-[219px] h-[101px] ">
+                <p class="w-[219px] h-[40px] font-bold text-[14px] text-[#1f1f1f]">Tênis Nike Revolution 6 Next<br />Nature Masculino</p>
+                <p class="font-medium text-[14px] text-[#1f1f1f] my-2" ><span class="w-[29px] h-[22px] font-medium text-[14px] text-[#8f8f8f] ">Cor:</span> Vermelho / Branco</p>
+                <p  class="font-medium text-[14px] text-[#1f1f1f]"><span  class="w-[29px] h-[22px] font-medium text-[14px] text-[#8f8f8f]">Tamanho:</span> 42</p>
+              </div>
+            </div>
+
+            <div class="flex  gap-[20px] px-[25px]"> 
+               <div class=" flex  flex-col text-center items-center gap-3">
+                <div class="w-[112px] h-[35px] text-center items-center justify-center flex gap-4">
+                      <button class="w-[35px] h-[35px] rounded-[3px] border-[0.73px] border-[#cccccc] text-[#474747] font-bold cursor-pointer">-</button>
+                      <label for="" class="w-[6px] h-[18px] font-bold text-[12px] text-[#474747]">1</label>
+                      <button  class="w-[35px] h-[35px] rounded-[3px] border-[0.73px] border-[#cccccc] text-[#474747] font-bold cursor-pointer">+</button>
+                </div>
+                <a href="" class="w-[87px] h-[28px] font-regular text-[12px] text-[#474747] underline">Remover item</a>
+               </div> 
+
+               <div class=" flex flex-col w-[86px] h-[54px] items-center">
+                <s class="w-[73px] h-[28px] text-[#cccccc] font-regular text-[14px] ">R$ 300,00</s>
+                <p class="w-[86px] h-[24px] font-bold text-[16px] text-[#474747]">R$ 219,00</p>
+               </div>
+
+               <div class=" flex flex-col w-[86px] h-[54px] items-center ml-[10px]">
+                <s class="w-[73px] h-[28px] text-[#cccccc] font-regular text-[14px] ">R$ 300,00</s>
+                <p class="w-[86px] h-[24px] font-bold text-[16px] text-[#474747]">R$ 219,00</p>
+               </div>
+
+            </div>
+          </div>
+          <hr class="w-[830px] border-1 text-[#cccccc] my-4" />
+
+          <div class="flex w-[830px] h-[89px] justify-between"><!--cupom de desconto / calcular frete-->
+              <div class="w-[394px] h-[89px]">
+                <label for="cupom de desconto" class="w-[131px] h-[24px] font-bold text-[12px] text-[#474747]">Cupom de desconto</label>
+                <div class="mt-[10px]">
+                  <input type="text" placeholder="Insira seu código" class="w-[270px] h-[60px] rounded-[8px] text-[16px] bg-[#47474708] pl-[12px] text-[#66666660]">
+                  <button class="w-[114px] h-[60px] font-bold text-[14px] bg-[#47474708] rounded-[8px] text-[#c92071] cursor-pointer">OK</button>
+                </div>
+              </div>
+
+              <div class="w-[394px] h-[89px]">
+                <label for="culcular frete" class="w-[131px] h-[24px] font-bold text-[12px] text-[#474747]">Calcular frete</label>
+                <div class="mt-[10px]">
+                  <input type="text" placeholder="Insira seu CEP" class="w-[270px] h-[60px] rounded-[8px] text-[16px] bg-[#47474708] pl-[12px] text-[#66666660]">
+                  <button class="w-[114px] h-[60px] font-bold text-[14px] bg-[#47474708] rounded-[8px] text-[#c92071] cursor-pointer">OK</button>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="bg-[white] w-[334px] h-[352px] mt-[100px] rounded-[4px] p-[30px] gap-[20px]">
+          <p class="w-[274px] h-[22px] gap-[365px]
+          text-[14px] font-bold text-[#474747]">RESUMO</p>
+           <hr class="w-[274px] border-1 text-[#cccccc] my-4" />
+           <div class=" flex flex-col gap-5">
+              <div  class="flex  justify-between w-[274px] h-[22px] ">
+                <p class="font-medium text-[14px] text-[#8f8f8f]
+                ">Subtotal:</p>
+                <p class="w-[68px] h-[22px] font-medium text-[14px] text-[#1f1f1f] line-height">R$ 219,00</p>
+              </div>
+              <div  class="flex  justify-between  w-[274px] h-[22px] ">
+                <p class="font-medium text-[14px] text-[#8f8f8f]">Frete:</p>
+                <p class="w-[54px] h-[22px] font-medium text-[14px] text-[#1f1f1f] text-height">R$ 0,00</p>
+              </div>
+              <div  class="flex  justify-between  w-[274px] h-[22px] ">
+                <p class="font-medium text-[14px] text-[#8f8f8f]">Desconto:</p>
+                <p class="w-[63px] h-[22px] font-medium text-[14px] text-[#1f1f1f]">R$ 30,00</p>
+              </div>
+        </div>
+
+           <div class="flex justify-between w-[280px] h-[34px] my-4 "><!--total-->
+               <div class="flex justify-between w-[280px] h-[34px] my-6 ">
+                  <p class=" w-[47px] h-[34px] font-bold text-[18px] text-[#1f1f1f]">Total</p>
+                  <p class="w-[93px] h-[34px] font-bold text-[18px] text-[#ee4266]">R$ 219,00</p>
+                </div>
+                
+           </div>
+              <P class="w-[274px] h-[22px]  font-medium text-[12px] text-[#8f8f8f] text-right">ou 10x de 21,00 sem juros</P>
+              <div class=" flex text-center items-center justify-center pt-2">
+                <button class="w-[274px] h-[40px] rounded-[8px] bg-[#f6aa1c] text-[white] font-bold text-[14px] cursor-pointer ">Continuar</button>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-[885px] h-[38px] flex justify-between ml-[70px] mt-[40px]">
+       <div class="w-[889px] flex justify-between">
+        <p class=" font-bold text-[24px] text-[#474747]">Produtos Relacionados</p>
+         <button class="font-regular text-[18px] text-[#c92071] cursor-pointer">Ver todos -></button> 
+       </div>
+      </div>
+
+      <div class="w-[885px] ml-[70px] mt-[20px] flex flex-wrap gap-2"> 
+       <div class="w-[214px]  bg-[#f9f8fe] ">
+         <div class="w-[214px] h-[220px] flex items-center justify-center bg-[white]  px-[20px] rounded-[4px] mb-[20px]" >
+         <img src="../assets/tenis-cards.png" class=" -rotate-30" alt="">
+         </div>
+         <p class="font-bold text-[12px] text-[#8f8f8f]" >Tênis</p>
+         <p class="font-regular text-[16px] text-[#474747]
+         my-[5px]">K-Swiss V8 - Masculino</p>
+         <div class="flex gap-3 mb-[100px]">
+          <s class="font-regular text-[16px] text-[#8f8f8f]">$200</s>
+          <p class="font-bold text-[16px] text-[#1f1f1f]">$100</p>
+         </div>
+       
+       </div>
+       <div class="w-[214px]  bg-[#f9f8fe] ">
+         <div class="w-[214px] h-[220px] flex items-center justify-center bg-[white] px-[20px] rounded-[4px] mb-[20px]" >
+         <img src="../assets/tenis-cards.png" class=" -rotate-30" alt="">
+         </div>
+         <p class="font-bold text-[12px] text-[#8f8f8f]" >Tênis</p>
+         <p class="font-regular text-[16px] text-[#474747]
+         my-[5px]">K-Swiss V8 - Masculino</p>
+         <div class="flex gap-3">
+          <s class="font-regular text-[16px] text-[#8f8f8f]">$200</s>
+          <p class="font-bold text-[16px] text-[#1f1f1f]">$100</p>
+         </div>
+       
+       </div>
+       <div class="w-[214px]  bg-[#f9f8fe] ">
+         <div class="w-[214px] h-[220px] flex items-center justify-center bg-[white]  px-[20px] rounded-[4px] mb-[20px]" >
+         <img src="../assets/tenis-cards.png" class=" -rotate-30" alt="">
+         </div>
+         <p class="font-bold text-[12px] text-[#8f8f8f]" >Tênis</p>
+         <p class="font-regular text-[16px] text-[#474747]
+         my-[5px]">K-Swiss V8 - Masculino</p>
+         <div class="flex gap-3">
+          <s class="font-regular text-[16px] text-[#8f8f8f]">$200</s>
+          <p class="font-bold text-[16px] text-[#1f1f1f]">$100</p>
+         </div>
+       
+       </div>
+       <div class="w-[214px] bg-[#f9f8fe] ">
+         <div class="w-[214px] h-[220px] flex items-center justify-center bg-[white] px-[20px] rounded-[4px] mb-[20px]" >
+         <img src="../assets/tenis-cards.png" class=" -rotate-30" alt="">
+         </div>
+         <p class="font-bold text-[12px] text-[#8f8f8f]" >Tênis</p>
+         <p class="font-regular text-[16px] text-[#474747]
+         my-[5px]">K-Swiss V8 - Masculino</p>
+         <div class="flex gap-3">
+          <s class="font-regular text-[16px] text-[#8f8f8f]">$200</s>
+          <p class="font-bold text-[16px] text-[#1f1f1f]">$100</p>
+         </div>
+       
+       </div>
+       
+      </div>
+
+    </section>
+  </body>
+</html>
